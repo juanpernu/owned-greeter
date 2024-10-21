@@ -1,10 +1,11 @@
-name = "owned-greeter"
+name = "owned-greeter-juan"
 version = "0.0.1"
 preset = "router"
-deployers = ["0xca7777aB932E8F0b930dE9F0d96f4E9a2a00DdD3", "0x7f28058F0b989430C7397782F797e300CDc10042"]
+deployers = ["0x88e224762460f5aAcA3Bde86dA4EFa9B13662b80", "0x7f28058F0b989430C7397782F797e300CDc10042"]
 
-[pull.greeter]
+[clone.greeter]
 source = "owned-greeter"
+target = "owned-greeter-juan:0.0.1@greeter"
 
 [router.Router]
 contracts = ["greeter.Greeter"]
